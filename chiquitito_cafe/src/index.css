@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espresso: #726555;
+  --color-foam: #eae8d7;
+  --color-accent: #72a4a9;
+  --color-text: #405a5a;
+
+  --font-sans: "Outfit", sans-serif;
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-playfair: "Playfair Display SC", serif;
+}

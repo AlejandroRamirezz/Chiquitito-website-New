@@ -406,16 +406,36 @@
 
     <!-- Hero section -->
     <section
-      class="hero-bg-coffee-shop min-h-[60svh] md:min-h-[70svh] flex flex-col items-center justify-center text-white text-center md:bg-fixed"
+      class="relative min-h-[75svh] md:min-h-[75svh] flex flex-col items-center justify-center text-white text-center overflow-hidden md:bg-fixed"
     >
-      <h1 class="text-4xl font-playfair mb-4 -translate-y-10 md:text-6xl">
-        Chiquitito Café
-      </h1>
-      <p
-        class="text-lg font-outfit max-w-md leading-relaxed -translate-y-10 md:text-xl"
-      >
-        Meticulous Quality. Local Soul.
-      </p>
+      <!-- Hero image -->
+      <img
+        src="/imagenes_avif_rest/coffee_shop.avif"
+        srcset="
+          /imagenes_avif_rest/coffee_shop.avif 1920w,
+          /imagenes_webp_rest/coffee_shop.webp 1920w,
+          /imagenes/coffee_shop.jpg            1920w
+        "
+        alt="Interior del Chiquitito Café"
+        fetchpriority="high"
+        decoding="async"
+        class="absolute inset-0 w-full h-full object-cover z-[-1]"
+      />
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/30 z-0"></div>
+
+      <!-- Text content -->
+      <div class="relative z-10">
+        <h1 class="text-4xl font-playfair mb-4 -translate-y-10 md:text-6xl">
+          Chiquitito Café
+        </h1>
+        <p
+          class="text-lg font-outfit max-w-md leading-relaxed -translate-y-10 md:text-xl"
+        >
+          Meticulous Quality. Local Soul.
+        </p>
+      </div>
     </section>
 
     <!-- Best sellers (Café preparado) -->

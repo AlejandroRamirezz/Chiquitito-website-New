@@ -151,18 +151,6 @@
   .sucursal_link {
     @apply bg-white text-espresso px-4 py-2 border-2 border-white rounded-xl hover:bg-espresso transition-colors hover:text-white;
   }
-
-  .hero-bg-coffee-shop {
-    aspect-ratio: 16 / 7;
-    background-image: image-set(
-      url("/imagenes_avif_rest/coffee_shop.avif") type("image/avif"),
-      url("/imagenes_webp_rest/coffee_shop.webp") type("image/webp"),
-      url("/imagenes/coffee_shop.jpg") type("image/jpeg")
-    );
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
 }
 
 /* Hamburger Menu */

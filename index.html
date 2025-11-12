@@ -408,19 +408,26 @@
     <section
       class="relative min-h-[75svh] md:min-h-[75svh] flex flex-col items-center justify-center text-white text-center overflow-hidden md:bg-fixed"
     >
-      <!-- Hero image -->
-      <img
-        src="/imagenes_avif_rest/coffee_shop.avif"
-        srcset="
-          /imagenes_avif_rest/coffee_shop.avif 1920w,
-          /imagenes_webp_rest/coffee_shop.webp 1920w,
-          /imagenes/coffee_shop.jpg            1920w
-        "
-        alt="Interior del Chiquitito Café"
-        fetchpriority="high"
-        decoding="async"
-        class="absolute inset-0 w-full h-full object-cover z-[-1]"
-      />
+      <!-- Hero image with AVIF/WebP/JPEG fallback -->
+      <picture>
+        <source
+          type="image/avif"
+          srcset="/imagenes_avif_rest/coffee_shop.avif"
+        />
+        <source
+          type="image/webp"
+          srcset="/imagenes_webp_rest/coffee_shop.webp"
+        />
+        <img
+          src="/imagenes/coffee_shop.jpg"
+          alt="Interior del Chiquitito Café"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+          decoding="async"
+          class="absolute inset-0 w-full h-full object-cover z-[-1]"
+        />
+      </picture>
 
       <!-- Overlay -->
       <div class="absolute inset-0 bg-black/30 z-0"></div>

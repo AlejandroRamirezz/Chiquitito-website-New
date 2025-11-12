@@ -21,3 +21,6 @@ Thumbs.db
 # Sharp cache or temp (if ever created)
 sharp-cache/
 tmp/
+
+# Reports folder for lighthouse
+reports

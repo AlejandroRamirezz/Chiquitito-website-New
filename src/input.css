@@ -153,6 +153,7 @@
   }
 
   .hero-bg-coffee-shop {
+    aspect-ratio: 16 / 7;
     background-image: image-set(
       url("/imagenes_avif_rest/coffee_shop.avif") type("image/avif"),
       url("/imagenes_webp_rest/coffee_shop.webp") type("image/webp"),
